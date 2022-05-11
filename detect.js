@@ -2,9 +2,9 @@ const ua = detect.parse(navigator.userAgent)
 const button = document.querySelector('.download')
 
 // Mobile version
+alert("Hello")
 if (ua.device !== null) {
     //alert("Browser result: "+ ua.browser.family)
-    alert("Hello")
     alert("Full Data: " + JSON.stringify(ua.device))
     alert("Device result: " + ua.device.family)
 }
