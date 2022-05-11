@@ -4,6 +4,7 @@ const button = document.querySelector('.download')
 // Mobile version
 if (ua.device !== null) {
     //alert("Browser result: "+ ua.browser.family)
+    alert("Hello")
     alert("Full Data: " + JSON.stringify(ua.device))
     alert("Device result: " + ua.device.family)
 }
