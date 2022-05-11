@@ -9,6 +9,11 @@ setTimeout(() => {
         alert("Device result: " + ua.device.family)
     }
 }, 2000)
-// PC version
-console.log("Full Data: " + JSON.stringify(ua.browser))
-console.log("Browser rezulst: " + ua.browser.family)
+
+if (ua.browser !== null) {
+    setTimeout(() => {
+        // PC version
+        alert("Full Data: " + JSON.stringify(ua.browser))
+        alert("Browser rezulst: " + ua.browser.family)
+    }, 2000)
+}
